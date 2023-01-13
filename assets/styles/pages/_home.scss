@@ -1,0 +1,111 @@
+body {
+  main {
+    section.section-title {
+      background: $color4;
+      .section-container {
+        .section-title-l {
+          padding: 150px 0 100px;
+          width: 50%;
+          @include center-unique-child;
+          text-align: left;
+          .container {
+            h1 {
+              padding-bottom: 50px;
+              font-size: 5rem;
+            }
+            h3 {
+              font-size: 3rem;
+              font-weight: lighter;
+              letter-spacing: 2px;
+              padding-bottom: 80px;
+            }
+          }
+        }
+        .section-title-r {
+          background: url("../img/title-cover.webp") center/cover;
+          width: 50%;
+        }
+      }
+    }
+
+    section.section2 {
+      background-color: $color3;
+      .section2-l {
+        width: 50%;
+        background: url("../img/pexels-expect-best-323776.jpg") center/cover;
+      }
+      .section2-r {
+        width: 50%;
+        text-align: left;
+        padding: 80px 100px 100px;
+        p {
+          padding-bottom: 80px;
+        }
+      }
+    }
+
+    section.section3 {
+      background-color: $color3;
+      .section3-l {
+        width: 50%;
+        text-align: left;
+        padding: 80px 100px 100px;
+        p {
+          padding-bottom: 80px;
+        }
+      }
+      .section3-r {
+        width: 50%;
+        background: url("../img/pexels-max-vakhtbovych-6032424.jpg")
+          center/cover;
+      }
+    }
+
+    section.section4 {
+      padding-top: 150px;
+      .section-container {
+        display: block;
+        .container {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 50% 50%;
+          grid-template-areas:
+            "g1 g2"
+            "g3 g4";
+          gap: 50px 0;
+
+          .g1 {
+            grid-area: g1;
+            @include center-unique-child;
+          }
+          .g2 {
+            grid-area: g2;
+
+            @include center-unique-child;
+          }
+          .g3 {
+            grid-area: g3;
+
+            @include center-unique-child;
+          }
+          .g4 {
+            grid-area: g4;
+
+            @include center-unique-child;
+          }
+
+          .g-container {
+            max-width: 400px;
+          }
+
+          h4 {
+            padding-bottom: 20px;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

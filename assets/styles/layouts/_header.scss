@@ -1,0 +1,26 @@
+header {
+  height: 100px;
+  background: $color1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  nav {
+    max-width: 1240px;
+    display: flex;
+    height: 100%;
+    ul {
+      display: flex;
+      li {
+        @include center-unique-child;
+      }
+    }
+    div {
+      background: url("./../img/logo/png/tibs-and-tools-low-resolution-logo-color-on-transparent-background.png")
+        center/cover;
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
